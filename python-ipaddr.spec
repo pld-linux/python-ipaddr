@@ -10,6 +10,7 @@ Release:	1
 License:	GPL
 Group:		Libraries/Python
 Source0:	ftp://ftp.cendio.se/pub/playground/python/%{module}-%{version}.tar.gz
+# Source0-md5:	e519c3d43a387255e925384a156a3d77
 URL:		http://www.vex.net/parnassus/apyllo.py/126307487
 %pyrequires_eq 	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
