@@ -1,6 +1,6 @@
 
 %include	/usr/lib/rpm/macros.python
-%define 	module ipaddr
+%define 	module	ipaddr
 
 Summary:	Python module is useful to manipulate IP addresses (sets)
 Summary(pl):	Modu³ jêzyka Python do manipulacji adresami IP
