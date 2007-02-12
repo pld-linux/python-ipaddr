@@ -2,7 +2,7 @@
 %define 	module	ipaddr
 
 Summary:	Python module is useful to manipulate IP addresses (sets)
-Summary(pl):	Modu³ jêzyka Python do manipulacji adresami IP
+Summary(pl.UTF-8):   ModuÅ‚ jÄ™zyka Python do manipulacji adresami IP
 Name:		python-%{module}
 Version:	1.1
 Release:	5
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module is useful if you need to manipulate IP addresses or sets
 of IP addresses.
 
-%description -l pl
-Modu³ jêzyka Python do manipulacji adresami IP.
+%description -l pl.UTF-8
+ModuÅ‚ jÄ™zyka Python do manipulacji adresami IP.
 
 %prep
 %setup -q -n %{module}-%{version}
