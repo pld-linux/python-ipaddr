@@ -5,7 +5,7 @@ Summary:	Python module is useful to manipulate IP addresses (sets)
 Summary(pl.UTF-8):	Moduł języka Python do manipulacji adresami IP
 Name:		python-%{module}
 Version:	1.1
-Release:	6
+Release:	7
 License:	GPL
 Group:		Libraries/Python
 Source0:	ftp://ftp.cendio.se/pub/playground/python/%{module}-%{version}.tar.gz
