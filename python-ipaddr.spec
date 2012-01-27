@@ -4,12 +4,12 @@
 Summary:	Python module is useful to manipulate IP addresses (sets)
 Summary(pl.UTF-8):	Moduł języka Python do manipulacji adresami IP
 Name:		python-%{module}
-Version:	2.1.9
-Release:	2
+Version:	2.1.10
+Release:	1
 License:	Apache v2.0
 Group:		Libraries/Python
 Source0:	http://ipaddr-py.googlecode.com/files/%{module}-%{version}.tar.gz
-# Source0-md5:	c8943c95fdf0d7d99bc26b484e1bbd99
+# Source0-md5:	f315ac829218e9735c5d772d59a3e0e7
 URL:		http://code.google.com/p/ipaddr-py/
 BuildRequires:	python
 BuildRequires:	python-modules
