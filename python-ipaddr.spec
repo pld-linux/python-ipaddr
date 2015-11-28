@@ -29,15 +29,11 @@ Moduł języka Python do operowania adresami lub zbiorami adresów IP.
 %setup -q -n %{module}-%{version}
 
 %build
-%{__python} setup.py build --build-base build-2
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py \
-	build --build-base build-2 \
-	install --skip-build \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %py_postclean
 
