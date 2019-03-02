@@ -1,3 +1,6 @@
+#
+# Conditional build:
+%bcond_without	tests	# unit tests
 
 %define 	module	ipaddr
 
@@ -8,10 +11,11 @@ Version:	2.2.0
 Release:	1
 License:	Apache v2.0
 Group:		Libraries/Python
-Source0:	https://pypi.python.org/packages/source/i/ipaddr/%{module}-%{version}.tar.gz
+#Source0Download: https://pypi.org/simple/ipaddr/
+Source0:	https://files.pythonhosted.org/packages/source/i/ipaddr/%{module}-%{version}.tar.gz
 # Source0-md5:	f88353e40dec06410acfa075b8209b27
-URL:		http://code.google.com/p/ipaddr-py/
-BuildRequires:	rpmbuild(macros) >= 1.710
+URL:		https://github.com/google/ipaddr-py
+BuildRequires:	rpmbuild(macros) >= 1.714
 BuildRequires:	python >= 2
 BuildRequires:	python-modules >= 2
 BuildRequires:	rpm-pythonprov
@@ -32,8 +36,13 @@ Moduł języka Python do operowania adresami lub zbiorami adresów IP.
 %build
 %py_build
 
+%if %{with tests}
+%{__python} ipaddr_test.py
+%endif
+
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %py_install
 
 %py_postclean
